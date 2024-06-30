@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ccl31vk6wxiwf"]
 
-[ext_resource type="PackedScene" uid="uid://bu66nj8huyhqw" path="res://scenes/player.tscn" id="1_q3myb"]
+[ext_resource type="PackedScene" uid="uid://dng5k8s2fe25i" path="res://scenes/player.tscn" id="2_438an"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dwpgs"]
 
@@ -18,6 +18,7 @@ physics_material_override = SubResource("PhysicsMaterial_dwpgs")
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="plataforma1"]
+layers = 3
 mesh = SubResource("BoxMesh_gyfmb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="plataforma1"]
@@ -26,5 +27,5 @@ shape = SubResource("BoxShape3D_uhidc")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.62708, -0.550641, 0.550968, 0, 0.707317, 0.706897, -0.778955, -0.443281, 0.443544, 2.68518, 4.0484, 2.10961)
 
-[node name="player" parent="." instance=ExtResource("1_q3myb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.04391, 2.34719, 0)
+[node name="player" parent="." instance=ExtResource("2_438an")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.279707, 0, -1.86263)
